@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinoshi Sewwandi - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -31,13 +35,13 @@
 
     <!-- Home Section (White Background) -->
     <section id="home" class="home">
-        <div class="container home-content">
+        <div data-aos="fade-right" class="container home-content">
             <div class="text">
-                <h2 style="font-size: 60px;">I'm a <span class="highlight">Full-Stack Developer</span></h2>
-                <p>Building dynamic & user-friendly web applications.</p>
-                <a href="#about" class="btn">More Details</a> <!-- More Details Button -->
-            </div>
-            <img src="6.png" alt="Dinoshi Sewwandi">
+  <h2 class="responsive-heading">I'm a <span class="highlight">Full-Stack Developer</span></h2>
+  <p>Building dynamic & user-friendly web applications.</p>
+  <a href="#about" class="btn">More Details</a>
+</div>
+            <img data-aos="fade-up"  src="6.png" alt="Dinoshi Sewwandi">
         </div>
     </section>
 
@@ -47,10 +51,10 @@
             <img src="5.png" alt="Dinoshi Sewwandi">
             <div class="text">
                 <h2>About <span class="highlight">Me</span></h2>
-                <p style="text-align: justify;">Hi, I'm T.G. Dinoshi Sewwandi, a front-end developer with a passion for Full Stack web development. I hold a BSc Honours in Industrial Information Technology from Uva Wellassa University.</p>
+                <p style="text-align: justify;" data-aos="fade-up">Hi, I'm T.G. Dinoshi Sewwandi, a front-end developer with a passion for Full Stack web development. I hold a BSc Honours in Industrial Information Technology from Uva Wellassa University.</p>
 
- <p style="text-align:justify;">I specialize in building modern, user-friendly, and visually appealing websites with technologies like HTML, CSS, JavaScript,Bootstrap, React ,PHP, MySQL etc. My focus is on creating seamless user experiences and intuitive interfaces that enhance engagement.</p>
- <p style="text-align: justify;">
+ <p data-aos="fade-up" style="text-align:justify;">I specialize in building modern, user-friendly, and visually appealing websites with technologies like HTML, CSS, JavaScript,Bootstrap, React ,PHP, MySQL etc. My focus is on creating seamless user experiences and intuitive interfaces that enhance engagement.</p>
+ <p data-aos="fade-up" style="text-align: justify;">
 
 I’m always exploring new technologies and design trends to bring innovative ideas to life. Whether it's crafting interactive web experiences or optimizing user interfaces, I strive to make every project both functional and aesthetically compelling.</p>
             </div>
@@ -58,7 +62,7 @@ I’m always exploring new technologies and design trends to bring innovative id
     </section>
 
     <!-- Projects Section (White Background) -->
-    <section id="projects" class="projects">
+    <section data-aos="fade-up" id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">My <span>Projects</span></h2>
             <div class="projects-grid">
@@ -101,7 +105,7 @@ I’m always exploring new technologies and design trends to bring innovative id
             <h2 class="section-title">Technical <span>Skills</span> & <span>Soft Skills</span></h2>
             <div class="skills-grid">
                 <!-- Technical Skills -->
-                <div class="skills-column">
+                <div data-aos="fade-right"  class="skills-column">
                     <h3>Technical Skills</h3>
                     <div class="skill">
                         <p>Java</p>
@@ -143,7 +147,7 @@ I’m always exploring new technologies and design trends to bring innovative id
                 </div>
 
                 <!-- Soft Skills -->
-                <div class="skills-column">
+                <div data-aos="fade-left"  class="skills-column">
                     <h3>Soft Skills</h3>
                     <div class="skill">
                         <p>Communication</p>
@@ -182,7 +186,7 @@ I’m always exploring new technologies and design trends to bring innovative id
     </section>
 
    <!-- Certifications Section (White Background) -->
-<section id="certifications" class="certifications">
+<section data-aos="fade-up" id="certifications" class="certifications">
     <div class="container">
         <h2 class="section-title">Certifications & Courses</h2>
         <div class="certificates-list">
@@ -238,7 +242,7 @@ I’m always exploring new technologies and design trends to bring innovative id
 
 <!-- Contact Section -->
 <!-- Contact Section -->
-<section id="contact" class="contact">
+<section data-aos="fade-u" id="contact" class="contact">
     <div class="container">
         <h2 class="section-title">Contact <span>Me</span></h2>
         <p>Let's connect! Feel free to reach out through any of the platforms below.</p>
@@ -277,7 +281,18 @@ I’m always exploring new technologies and design trends to bring innovative id
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.toggle('active');
         }
-    </script>
+
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false, // this ensures animations repeat on scroll up and down
+    duration: 800 // optional: animation speed
+  });
+</script>
+
+
 
 
 

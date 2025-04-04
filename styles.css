@@ -210,7 +210,7 @@ h2 span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 30px;
+    gap: 10px;
 }
 
 .home-content .text, .about-content .text {
@@ -218,13 +218,13 @@ h2 span {
 }
 
 .home-content img, .about-content img {
-    width: 400px;
+    width: 500px;
     border-radius: 20%;
     transition: transform 0.3s ease-in-out;
 }
 
 .home-content img:hover, .about-content img:hover {
-    width: 400px;
+ 
      transform: scale(1.1);
     border-radius: 20%;
 }
@@ -277,6 +277,10 @@ h2 span {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: purple;
 }
 
 /* Skills */
@@ -532,5 +536,32 @@ h3 {
 .contact-card:hover span {
     color: white;
 }
+
+.fade-in {
+  animation: fadeIn 3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 10; }
+}
+
+ .responsive-heading {
+    font-size: 5vw; /* adjusts with screen width */
+  }
+
+  @media (max-width: 768px) {
+    .responsive-heading {
+      font-size: 6vw;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .responsive-heading {
+      font-size: 7vw;
+    }
+  }
+
+
 
 
